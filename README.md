@@ -1,5 +1,24 @@
 # README
 
+## Configure
+
+1. Debug build
+
+```
+mkdir build
+cd build
+cmake ..
+```
+
+2. Release build
+
+```
+mkdir release
+cd release
+cmake -DCMAKE_BUILD_TYPE=Release ..
+```
+
+
 ## Steps
 
 1. copy the necessary files from the imgui library.
