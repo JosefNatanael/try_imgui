@@ -1,6 +1,6 @@
 #pragma once
 
-#include <chrono>
+#include <cstdint>
 
 // https://github.com/ocornut/imgui/wiki/Implementing-Power-Save,-aka-Idling-outside-of-ImGui
 

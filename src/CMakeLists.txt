@@ -19,7 +19,7 @@ target_link_libraries(try_imgui ${LINUX_GL_LIBS} ${GLFW_STATIC_LIBS})
 target_include_directories(try_imgui PRIVATE ${CMAKE_SOURCE_DIR}/imgui)
 target_include_directories(try_imgui PRIVATE ${CMAKE_SOURCE_DIR}/backends)
 
-add_executable(basic basic.cpp PowerSave.cpp BasicWidget.cpp ${IMGUI_SOURCES})
+add_executable(basic basic.cpp PowerSave.cpp FakeData.cpp BasicWidget.cpp ${IMGUI_SOURCES})
 target_link_libraries(basic ${LINUX_GL_LIBS} ${GLFW_STATIC_LIBS})
 target_include_directories(basic PRIVATE ${CMAKE_SOURCE_DIR}/imgui)
 target_include_directories(basic PRIVATE ${CMAKE_SOURCE_DIR}/backends)

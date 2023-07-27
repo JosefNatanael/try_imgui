@@ -63,7 +63,7 @@ int main(int, char**) {
 #endif
 
     // Create window with graphics context
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Dear ImGui GLFW+OpenGL3 example", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1280, 720, "OptionsMap", nullptr, nullptr);
     if (window == nullptr) return 1;
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);  // Enable vsync
@@ -119,11 +119,12 @@ int main(int, char**) {
     // io.Fonts->GetGlyphRangesJapanese()); IM_ASSERT(font != nullptr);
 
     // Our state
-    ApplicationState appState{
+    op::ApplicationState appState{
         .clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f),
         .enable_power_save = true,
         .show_demo_window = true,
         .show_another_window = false,
+        .wrappedTableData = {}
     };
 
     ImVec4& clear_color = appState.clear_color;
